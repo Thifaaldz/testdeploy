@@ -1,0 +1,60 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+[x-cloak] {
+    display: none !important;
+}
+.grid-image .filepond--item {
+    width: calc(33.3% - 0.5em);
+}
+
+/* ============================================
+   Custom BPS Dashboard Color Scheme
+   Based on design mockups in /design folder
+   Primary: Warm Orange/Amber #E07B2A
+   Background: Warm Beige #FAF3E8
+   Card: Light Amber #FFF5E0
+   Topbar: Warm Yellow #F9D77E
+   ============================================ */
+
+/* Main background */
+body,
+.fi-main,
+.fi-main-ctn {
+    background-color: #FAF3E8 !important;
+}
+
+/* Topbar - matches the warm golden bar in the design */
+.fi-topbar {
+    background-color: #F9D77E !important;
+    border-bottom: 1px solid #F0C85A !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+
+/* Topbar icons, text, and search become dark for contrast on yellow */
+.fi-topbar .fi-icon-btn,
+.fi-topbar .fi-input {
+    color: #1f2937 !important;
+}
+
+/* Sidebar stays white like design */
+.fi-sidebar,
+.fi-sidebar-nav {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #F0EDE8 !important;
+}
+
+/* Default Filament chart widget cards */
+.fi-wi-chart {
+    background-color: #FFF5E0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0.75rem !important;
+}
+
+/* Page heading */
+.fi-page-header-heading {
+    color: #1f2937 !important;
+}
+
