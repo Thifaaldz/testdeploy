@@ -7,6 +7,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "ext-intl": "*",
+        "ext-gd": "*",
+        "ext-zip": "*",
+        "ext-bcmath": "*",
         "awcodes/light-switch": "*",
         "awcodes/overlook": "*",
         "aymanalhattami/filament-slim-scrollbar": "*",
